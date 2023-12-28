@@ -41,7 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </a>
           <div className="mb-5 mt-2.5 flex items-center"></div>
           <div className="flex items-center justify-between">
-            <span className="text-3xl font-bold text-gray-900 dark:text-white">
+            <span className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
               {formatPrice(product.price, { currency: "ZAR" })}
             </span>
             <a
