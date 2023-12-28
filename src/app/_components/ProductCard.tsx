@@ -16,7 +16,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <>
       <div
         key={product.id}
-        className="w-full max-w-sm rounded-lg bg-white shadow hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
+        className="w-full rounded-lg bg-white shadow hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
       >
         <a href="#" className="overflow-hidden">
           <div className="overflow-hidden">
