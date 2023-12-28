@@ -1,5 +1,5 @@
 import { type ClassValue, clsx } from "clsx";
-import { Metadata } from "next";
+import { type Metadata } from "next";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export function formatPrice(
   price: number | string,
   options: {
-    currency?: "USD" | "EUR" | "GBP" | "BDT";
+    currency?: "USD" | "EUR" | "GBP" | "BDT" | "ZAR"; 
     notation?: Intl.NumberFormatOptions["notation"];
   } = {},
 ) {
@@ -17,17 +17,20 @@ export function formatPrice(
 
   const numericPrice = typeof price === "string" ? parseFloat(price) : price;
 
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-ZA", {
+
     style: "currency",
     currency,
     notation,
+    minimumFractionDigits: 2, 
     maximumFractionDigits: 2,
   }).format(numericPrice);
 }
 
+
 export function constructMetadata({
-  title = "DigitalHippo - the marketplace for digital assets",
-  description = "DigitalHippo is an open-source marketplace for high-quality digital goods.",
+  title = "Canvor - the marketplace for quality artwork",
+  description = "Canvor is a marketplace for high-quality digital artwork.",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false,

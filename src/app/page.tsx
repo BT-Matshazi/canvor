@@ -33,15 +33,18 @@ export default function Home() {
         <div className="mx-auto flex max-w-3xl flex-col items-center py-20 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Your marketplace for high-quality{" "}
-            <span className="text-blue-600">Art Work</span>.
+            <span className="text-stroke-3 text-white ">Art Work</span>.
           </h1>
           <p className="mt-6 max-w-prose text-lg text-muted-foreground">
-            Welcome to Canvor. Every asset on our platform is verified by our
+            Welcome to Canvor. All art work on our platform is verified by our
             team to ensure our highest quality standards.
-          </p>{" "}
+          </p>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-            <Link href="/products" className={buttonVariants()}>
-              Browse Trending
+            <Link
+              href="/products"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md bg-black px-5 text-sm font-medium text-white ring-offset-background transition-colors hover:bg-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+            >
+              Browse Collection
             </Link>
             <Button variant="ghost">Our quality promise &rarr;</Button>
           </div>
@@ -58,7 +61,7 @@ export default function Home() {
                 className="text-center md:flex md:items-start md:text-left lg:block lg:text-center"
               >
                 <div className="flex justify-center md:flex-shrink-0">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-blue-900">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-200 text-black">
                     {<perk.Icon className="h-1/3 w-1/3" />}
                   </div>
                 </div>
