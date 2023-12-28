@@ -11,7 +11,7 @@ export function formatPrice(
   options: {
     currency?: "USD" | "EUR" | "GBP" | "BDT";
     notation?: Intl.NumberFormatOptions["notation"];
-  } = {}
+  } = {},
 ) {
   const { currency = "USD", notation = "compact" } = options;
 
@@ -50,15 +50,9 @@ export function constructMetadata({
         },
       ],
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [image],
-      creator: "@joshtriedcoding",
-    },
+
     icons,
-    metadataBase: new URL("https://digitalhippo.up.railway.app"),
+    metadataBase: new URL("https://canvor.co.za"),
     ...(noIndex && {
       robots: {
         index: false,
