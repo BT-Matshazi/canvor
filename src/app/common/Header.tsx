@@ -65,7 +65,7 @@ export default function NavBar() {
       <div className="m-auto w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image src={Logo} className="m-0 w-32 p-0" alt="Logo" />

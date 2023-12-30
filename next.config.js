@@ -30,7 +30,7 @@ const config = {
       },
       {
         protocol: "https",
-        hostname: "flowbite.com",
+        hostname: "utfs.io",
       },
       {
         protocol: "https",

@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image';
-import { formatPrice } from '~/lib/utils';
+import React from "react";
+import Image from "next/image";
+import { formatPrice } from "~/lib/utils";
 
 type Product = {
   id: string;
@@ -27,7 +27,6 @@ export default function ProductCard({ product }: { product: Product }) {
               }
               width={500}
               height={500}
-              layout="responsive"
               className="object-cover transition-all duration-300 hover:scale-110 hover:opacity-80"
               alt={product.name}
             />
@@ -41,7 +40,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </a>
           <div className="mb-5 mt-2.5 flex items-center"></div>
           <div className="flex items-center justify-between">
-            <span className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
+            <span className="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">
               {formatPrice(product.price, { currency: "ZAR" })}
             </span>
             <a
