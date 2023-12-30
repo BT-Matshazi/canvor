@@ -80,7 +80,6 @@ export default function Home() {
         </MaxWidthWrapper>
       </section>
         <FeaturedProducts />
-
     </>
   );
 }
