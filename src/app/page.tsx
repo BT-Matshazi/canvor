@@ -1,27 +1,27 @@
 import MaxWidthWrapper from "./_components/MaxWidthWrapper";
 import { Button, buttonVariants } from "./_components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import { MessageCircle, CheckCircle, Truck } from "lucide-react";
 import Link from "next/link";
 import FeaturedProducts from "./_components/FeaturedProducts";
 
 const perks = [
   {
-    name: "Instant Delivery",
-    Icon: ArrowDownToLine,
+    name: "Fast Delivery",
+    Icon: Truck,
     description:
-      "Get your assets delivered to your email in seconds and download them right away.",
+      "Experience the swift delivery of your favorite artworks with our Fast Delivery service. We ensure your cherished pieces reach you promptly.",
   },
   {
     name: "Guaranteed Quality",
     Icon: CheckCircle,
     description:
-      "Every asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee.",
+      "All artwork on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee.",
   },
   {
-    name: "For the Planet",
-    Icon: Leaf,
+    name: "For Exceptional Service",
+    Icon: MessageCircle,
     description:
-      "We've pledged 1% of sales to the preservation and restoration of the natural environment.",
+      "We are dedicated to providing exceptional customer service. As a testament to our commitment we have a team ready to tend to your needs.",
   },
 ];
 

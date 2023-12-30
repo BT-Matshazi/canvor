@@ -7,27 +7,27 @@ const product = [
     price: 799,
     description: "This is product 1",
     images: [
-      "https://utfs.io/f/6fc042ed-6255-4ce6-af09-34ca70dd141b-b2jhfp.jpg",
+      "https://utfs.io/f/d2aaece1-4546-4fa3-a340-c52c21018342-xuy3x8.png",
     ],
     tags: ["tag1", "tag2"],
   },
   {
     id: "2",
     name: "Sir Lewis Hamilton",
-    price: 999,
+    price: 899,
     description: "This is product 2",
     images: [
-      "https://canvogh.com/cdn/shop/products/pro-previews454928823_720x720.png?v=1644424323",
+      "https://utfs.io/f/35919b75-7d09-4548-9a29-27c71039e408-xuy3x7.png",
     ],
     tags: ["tag1", "tag2"],
   },
   {
     id: "3",
     name: "Sir Lewis Hamilton",
-    price: 999,
+    price: 699,
     description: "This is product 3",
     images: [
-      "https://canvogh.com/cdn/shop/products/pro-previews454928823_720x720.png?v=1644424323",
+      "https://utfs.io/f/77be8d3b-bce6-4f22-b6ab-643bd780ab44-xuy3x6.png",
     ],
     tags: ["tag1", "tag2"],
   },

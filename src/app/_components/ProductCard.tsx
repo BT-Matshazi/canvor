@@ -18,7 +18,7 @@ export default function ProductCard({ product }: { product: Product }) {
         key={product.id}
         className="w-full rounded-lg bg-white shadow hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
       >
-        <a href="#" className="overflow-hidden">
+        <a href="#0">
           <div className="overflow-hidden">
             <Image
               src={
@@ -27,20 +27,20 @@ export default function ProductCard({ product }: { product: Product }) {
               }
               width={500}
               height={500}
-              className="object-cover transition-all duration-300 hover:scale-110 hover:opacity-80"
+              className="m-auto object-cover transition-all duration-300 hover:scale-110 hover:opacity-80"
               alt={product.name}
             />
           </div>
         </a>
         <div className="px-5 pb-5">
           <a href="#">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="text-xl mt-2 font-semibold tracking-tight text-gray-900 dark:text-white">
               {product.name}
             </h5>
           </a>
           <div className="mb-5 mt-2.5 flex items-center"></div>
           <div className="flex items-center justify-between">
-            <span className="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">
+            <span className="text-xl font-bold text-gray-900 dark:text-white">
               {formatPrice(product.price, { currency: "ZAR" })}
             </span>
             <a
