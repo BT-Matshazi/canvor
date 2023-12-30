@@ -4,7 +4,7 @@ const product = [
   {
     id: "1",
     name: "Sir Lewis Hamilton",
-    price: 100,
+    price: 799,
     description: "This is product 1",
     images: [
       "https://utfs.io/f/6fc042ed-6255-4ce6-af09-34ca70dd141b-b2jhfp.jpg",
@@ -14,7 +14,7 @@ const product = [
   {
     id: "2",
     name: "Sir Lewis Hamilton",
-    price: 200,
+    price: 999,
     description: "This is product 2",
     images: [
       "https://canvogh.com/cdn/shop/products/pro-previews454928823_720x720.png?v=1644424323",
@@ -24,7 +24,7 @@ const product = [
   {
     id: "3",
     name: "Sir Lewis Hamilton",
-    price: 300,
+    price: 999,
     description: "This is product 3",
     images: [
       "https://canvogh.com/cdn/shop/products/pro-previews454928823_720x720.png?v=1644424323",
