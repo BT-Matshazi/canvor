@@ -69,7 +69,7 @@ const Cart = () => {
 
                 <div className="flex">
                   <span className="flex-1">Total</span>
-                  <span>{formatPrice(cartTotal, { currency: "ZAR" })}</span>
+                  <span>{formatPrice(cartTotal + 99, { currency: "ZAR" })}</span>
                 </div>
               </div>
 
