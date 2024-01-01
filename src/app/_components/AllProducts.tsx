@@ -14,7 +14,7 @@ export default function AllProducts() {
 
   return (
     <>
-      <div className="w-6/6 my-10 flex justify-center">
+      <div className="w-5/6 md:w-6/6 m-auto my-10 flex justify-center">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {/* <div className="col-span-1 m-auto w-5/6 ">
             <div className="rounded-lg bg-white shadow dark:bg-gray-700">
@@ -54,7 +54,7 @@ export default function AllProducts() {
             </div>
           </div> */}
           <div className="col-span-1 md:col-span-2 lg:col-span-3">
-            <div className="md:w-6/6 grid grid-cols-1 gap-4 sm:w-5/6 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
               {filteredProducts.length === 0
                 ? null
                 : filteredProducts.map((product) => (
