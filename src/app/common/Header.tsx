@@ -29,7 +29,6 @@ export default function NavBar() {
       name: "Products",
       url: "/products",
     },
-
     // {
     //   id: 4,
     //   name: "Contact",
