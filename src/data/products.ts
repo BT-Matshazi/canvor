@@ -1,9 +1,7 @@
-import L from "../../public/products/lewis-hamilton-1.jpg"
-
 const product = [
   {
     id: "1",
-    name: "Sir Lewis Hamilton",
+    name: "Sir Lewis Hamilton 1",
     price: 799,
     description: "This is product 1",
     images: [
@@ -13,7 +11,7 @@ const product = [
   },
   {
     id: "2",
-    name: "Sir Lewis Hamilton",
+    name: "Sir Lewis Hamilton 2",
     price: 899,
     description: "This is product 2",
     images: [
@@ -23,7 +21,7 @@ const product = [
   },
   {
     id: "3",
-    name: "Sir Lewis Hamilton",
+    name: "Sir Lewis Hamilton 3",
     price: 699,
     description: "This is product 3",
     images: [
