@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { formatPrice } from "~/lib/utils";
 import  AddToCartButton from "./AddToCartButton";
+import Link from "next/link";
 
 type Product = {
   id: string;
@@ -15,8 +16,9 @@ type Product = {
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <>
-      <div
+      <Link
         key={product.id}
+        href={`/product/${product.id}`}
         className="w-full rounded-lg bg-white shadow hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
       >
         <a href="#0">
@@ -47,7 +49,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <AddToCartButton product={product} />
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

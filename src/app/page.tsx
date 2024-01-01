@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "./_components/MaxWidthWrapper";
-import { Button, buttonVariants } from "./_components/ui/button";
 import { MessageCircle, CheckCircle, Truck } from "lucide-react";
 import Link from "next/link";
 import FeaturedProducts from "./_components/FeaturedProducts";
@@ -29,7 +28,6 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper>
-        {" "}
         <div className="mx-auto flex max-w-3xl flex-col items-center py-20 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Your marketplace for high-quality{" "}
@@ -46,13 +44,11 @@ export default function Home() {
             >
               Browse Collection
             </Link>
-            <Button variant="ghost">Our quality promise &rarr;</Button>
           </div>
         </div>
-        {/* TODO: list Products */}
       </MaxWidthWrapper>
 
-      <section >
+      <section>
         <MaxWidthWrapper className="py-10">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
             {perks.map((perk) => (
@@ -65,7 +61,6 @@ export default function Home() {
                     {<perk.Icon className="h-1/3 w-1/3" />}
                   </div>
                 </div>
-
                 <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
                   <h3 className="text-base font-medium text-gray-900">
                     {perk.name}
@@ -79,7 +74,7 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
-        <FeaturedProducts />
+      <FeaturedProducts />
     </>
   );
 }

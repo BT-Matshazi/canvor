@@ -30,11 +30,11 @@ export default function NavBar() {
       url: "/products",
     },
 
-    {
-      id: 4,
-      name: "Contact",
-      url: "/contact",
-    },
+    // {
+    //   id: 4,
+    //   name: "Contact",
+    //   url: "/contact",
+    // },
   ];
 
   const subMenuItems = [
