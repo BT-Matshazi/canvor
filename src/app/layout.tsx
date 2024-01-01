@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import Header from "./common/Header";
 import { Toaster } from "../app/_components/ui/sonner"
 import { TRPCReactProvider } from "~/trpc/react";
+import { Analytics } from "@vercel/analytics/react";
 import { cn, constructMetadata } from "~/lib/utils";
 
 const inter = Inter({
@@ -30,6 +31,7 @@ export default function RootLayout({
           </TRPCReactProvider>
         </main>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
