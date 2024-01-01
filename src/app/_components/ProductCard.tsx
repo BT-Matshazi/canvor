@@ -16,12 +16,11 @@ type Product = {
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <>
-      <Link
+      <div
         key={product.id}
-        href={`/product/${product.id}`}
         className="w-full rounded-lg bg-white shadow hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
       >
-        <a href="#0">
+        <Link href={`/product/${product.id}`}>
           <div className="overflow-hidden">
             <Image
               src={
@@ -34,7 +33,7 @@ export default function ProductCard({ product }: { product: Product }) {
               alt={product.name}
             />
           </div>
-        </a>
+        </Link>
         <div className="px-5 pb-5">
           <a href="#">
             <h5 className="mt-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
@@ -49,7 +48,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <AddToCartButton product={product} />
           </div>
         </div>
-      </Link>
+      </div>
     </>
   );
 }
