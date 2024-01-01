@@ -4,8 +4,9 @@ import ProductsBanner from "../_components/ProductsBanner";
 
 export default function page() {
   return (
-    <><ProductsBanner/>
-      <AllProducts/>
+    <>
+      <ProductsBanner />
+      <AllProducts />
     </>
   );
 }

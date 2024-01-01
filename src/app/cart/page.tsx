@@ -133,8 +133,7 @@ const Page = () => {
 
                         <p className="mt-4 flex space-x-2 text-sm text-gray-700">
                           <Check className="h-5 w-5 flex-shrink-0 text-green-500" />
-
-                          <span>Eligible for instant delivery</span>
+                          <span>In stock</span>
                         </p>
                       </div>
                     </li>
